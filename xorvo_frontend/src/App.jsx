@@ -26,7 +26,7 @@ const Privacy = lazy(() => import("@/components/Privacy"));
 const LandingExtension = lazy(() => import("./pages/LandingExtension"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const PricingCMS = lazy(() => import("./pages/PricingCMS"));
-const ServicesPages = lazy(() => import("@/components/ServicesPages"));
+const Services = lazy(() => import("./pages/Services"));
 const Verification = lazy(() => import("./pages/Verification"));
 
 // Loading component
@@ -64,9 +64,9 @@ const AppContent = () => {
           <Route path="/solutions" element={<Solution />} />
 
           {/* Integrated Services Pages */}
-          <Route path="/services" element={<ServicesPages />} />
-          <Route path="/services/:slug" element={<ServicesPages />} />
-          <Route path="/services-overview" element={<ServicesPages />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/:slug" element={<Services />} />
+          <Route path="/services-overview" element={<Services />} />
 
           {/* Certificate Verification Portal */}
           <Route path="/verification" element={<Verification />} />
